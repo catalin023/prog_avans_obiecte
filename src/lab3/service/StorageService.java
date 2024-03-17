@@ -1,8 +1,8 @@
-package lb3.service;
+package lab3.service;
 
-import lb3.model.Professor;
-import lb3.model.Person;
-import lb3.model.Student;
+import lab3.model.Professor;
+import lab3.model.Person;
+import lab3.model.Student;
 
 import java.util.ArrayList;
 import java.util.List;

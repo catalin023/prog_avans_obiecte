@@ -1,12 +1,10 @@
-package lb3;
+package lab3;
 
-import lb3.model.Person;
-import lb3.model.Professor;
-import lb3.model.Student;
-import lb3.service.StorageService;
+import lab3.model.Person;
+import lab3.model.Professor;
+import lab3.model.Student;
+import lab3.service.StorageService;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Application {

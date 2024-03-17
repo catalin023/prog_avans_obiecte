@@ -1,4 +1,4 @@
-package lb3.model;
+package lab3.model;
 
 public class Student extends Person{
 
