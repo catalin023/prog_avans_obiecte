@@ -15,7 +15,7 @@ public record DebitCard(String nume, double limitAmount) implements BankCard {
 
     @Override
     public void doTransaction(double amount) {
-        if (amount <= limitAmount) {
+        if (amount+spentAmount <= limitAmount) {
             spentAmount += amount;
             System.out.println("Utilizator " + nume() + " a cheltuit " + amount);
             System.out.println("Suma totala cheltuita cu carduri de debit este " + spentAmount);

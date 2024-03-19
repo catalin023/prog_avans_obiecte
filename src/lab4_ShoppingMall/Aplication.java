@@ -19,7 +19,7 @@ public class Aplication {
         shop.achizitie(400);
 
         shop.setCard(debit);
-        shop.achizitie(30
-        );
+        shop.achizitie(30);
+        shop.achizitie(300);
     }
 }
