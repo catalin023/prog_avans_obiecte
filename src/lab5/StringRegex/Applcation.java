@@ -13,7 +13,6 @@ public class Applcation {
         System.out.println("abcab".matches("[abc]{5}"));
         System.out.println("abacbabc".matches("[abc]{5,}"));
         System.out.println("cbabbbca".matches("[abc]{5,10}"));
-        System.out.println("a".matches("[abc]"));
 
     }
 }
