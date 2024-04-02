@@ -35,6 +35,16 @@ public class ShoppingMall {
         return magazineByProprietar;
     }
 
+    public List<Proprietar> getProprietari(){
+        List<Proprietar> proprietari = new ArrayList<>();
+        for(Magazin magazin : magazine){
+            if(!proprietari.contains(magazin.getProprietar())){
+                proprietari.add(magazin.getProprietar());
+            }
+        }
+        return proprietari;
+    }
+
     public int venitBYProprietar(Proprietar proprietar){
         int venit = 0;
         for(Magazin magazin : magazine){
