@@ -1,0 +1,6 @@
+catalin;catalin;20;210;ron
+p1;papuc;12;200;v1
+daniel;daniel;15;144;v2
+daniel;antonescu;15;17
+q;popescu;1;100;12
+daniel;vatamaniuc;50;1990;usd
