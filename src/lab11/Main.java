@@ -19,6 +19,7 @@ public class Main {
 
         cache.start();
 
+
         for (int i = 6; i < 106; i++) {
             StoredObject o = new StoredObject("o" + i);
             cache.put(i, o);

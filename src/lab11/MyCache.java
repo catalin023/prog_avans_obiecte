@@ -23,14 +23,21 @@ public class MyCache extends  Thread{
 
     public void run() {
         while (true) {
+            boolean empty = true;
             long currentTime = System.currentTimeMillis();
             for (Map.Entry<Integer, StoredObject> entry : cache.entrySet()) {
                 StoredObject storedObject = entry.getValue();
-                if (!storedObject.isExpired() && storedObject.getExpirationTime().getTime() < currentTime) {
+                if (storedObject.getExpirationTime().getTime() < currentTime){
                     storedObject.setExpired(true);
+                }
+                else {
+                    empty = false;
                 }
             }
             System.out.println(cache);
+            if (empty) {
+                break;
+            }
             try {
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
